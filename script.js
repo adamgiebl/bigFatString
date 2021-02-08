@@ -12,7 +12,8 @@ form.addEventListener("submit", (e) => {
   if (!inputText) return;
   switch (dropdownValue) {
     case 0:
-      outputText = inputText[0].toUpperCase() + inputText.substring(1);
+      outputText =
+        inputText[0].toUpperCase() + inputText.substring(1).toLowerCase();
       break;
     case 1:
       outputText = inputText.slice(0, inputText.indexOf(" "));
